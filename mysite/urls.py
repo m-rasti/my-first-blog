@@ -1,4 +1,4 @@
-"""mysite URL Configuration
+"""InStore URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -16,7 +16,14 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
+
+    # url(r'^accounts/', include('allauth.urls'), name='facebook'),
+    #url(r'^settings/$', core_views.settings, name='settings'),
+   # url(r'^settings/password/$', core_views.password, name='password'),
 ]
