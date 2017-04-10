@@ -4,4 +4,4 @@ gunicorn==19.6.0
 psycopg2==2.6.2
 whitenoise==2.0.6
 requests==2.9.1
-Social-oauth-app-django==1.9.0
+social-oauth-app-django == 2.9.1
